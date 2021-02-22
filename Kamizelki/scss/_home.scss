@@ -1,0 +1,110 @@
+.home-section {
+    overflow-x: hidden;
+    background-image:url('vest1.jpg');
+    position: relative;
+    @media (max-width:992px) {
+        background-position: center;
+    }
+   
+}
+.home-section::before{
+    @include baseColor;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: .8;
+ 
+  }
+.lowerBgc {
+    position: relative;
+  }
+.lowerBgc::before {
+    content:'';
+    position: absolute; 
+    width: 100%;
+    height: 120px;
+    right: 0;
+    bottom: 0%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('shape-bg.png');
+}
+.home-section .home-content h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    @media (max-width:576px) {
+        font-size:35px;
+    }
+}
+.home-section .home-content p {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 28px;
+    @media (max-width:576px) {
+        font-size:15px;
+    }
+}
+.home-content {
+    padding: 250px 0 200px;
+    @media (max-width:576px) {
+        padding: 170px 0 140px;
+    }
+    @media (max-width:476px) {
+        padding: 85px 0 140px;
+    }
+}
+.bg-shapes div {
+    position: absolute;
+    opacity: 0.2;
+}
+.bg-shapes div:nth-child(1) {
+    height: 100px;
+    width: 100px;
+    top:20%;
+    left:20%;
+    border-radius: 50%;
+    background-color: white;
+    animation: shapeOne 15s linear infinite;
+}
+.bg-shapes div:nth-child(2) {
+    height: 180px;
+    width: 180px;
+    top:70%;
+    left:85%;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: shapeOne 5s linear infinite;
+    border: 5px solid white;
+    border-bottom: 5px solid transparent;
+    animation: none; 
+}
+.bg-shapes div:nth-child(3) {
+    height: 90px;
+    width: 90px;
+    top:10%;
+    left:85%;
+    border-radius: 50%;
+    background-color: white;
+    animation: shapeOne 5s linear infinite;
+    border: 5px solid white;
+    animation: shapeThird 35s linear infinite; 
+}
+.bg-shapes div:nth-child(4) {
+    height: 180px;
+    width: 180px;
+    top:40%;
+    left:calc(0%-100px);
+    border-radius: 50%;
+    background-color: white;
+    animation: shapeOne 5s linear infinite;
+    border: 5px solid white;
+    animation: none;
+}

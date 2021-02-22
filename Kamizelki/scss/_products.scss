@@ -1,0 +1,102 @@
+.products-section {
+    background-color: white;
+    padding: 80px 0 80px;
+    
+}
+.products-section .products-item {
+    box-shadow: 0 0 10px #dddde3;
+    margin: 15px 0;
+}
+.products-section .products-item .product-img {
+  position: relative;
+    border-bottom: 1px solid #eeeeee;
+}
+.products-section .products-item .product-img img{
+    width: 100%;
+    display: block;
+}
+.products-section .product-content{
+    padding: 0 30px;
+    text-align: center;
+}
+.products-section .product-content .product-price{
+    margin: 15px 0 5px;
+}
+.products-section .product-content .product-price .new-price{
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    color: $baseColor;
+    margin: 0 5px;
+}
+.products-section .product-content .product-price .old-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    display: inline-block;
+    color: #959595;
+    font-weight: 400;
+}
+.products-section .product-content .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 26px;
+}
+.products-section .product-img .overlay {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(253, 189, 14, 0.6);
+  transition: all 0.5s ease;
+  opacity:0;
+}
+.products-section .products-item:hover .product-img .overlay {
+    opacity: 1;
+}
+.products-section .product-img .overlay .btn {
+  transform:translateY(100px);
+  transition: .5s;
+  margin: auto;
+  }
+.products-section .products-item:hover .product-img .overlay .btn {
+    transform:translateY(0px);
+}
+.products-section .owl-carousel .owl-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+.products-section .owl-carousel .owl-nav button.owl-next, 
+.products-section .owl-carousel .owl-nav button.owl-prev {
+height: 40px;
+width: 40px;
+margin:0 10px;
+@include baseColor;
+display: inline-block;
+border-radius: 50%;
+font-weight: 500;
+overflow: hidden;
+color:white;
+
+}
+.products-section .owl-carousel .owl-nav button.owl-next:hover, 
+.products-section .owl-carousel .owl-nav button.owl-prev:hover  {
+@include white;
+color: $baseColor;
+}
+.products-section .owl-carousel .owl-nav button.owl-next:focus, 
+.products-section .owl-carousel .owl-nav button.owl-prev:focus {
+    outline: none;
+}
+.products-section .owl-carousel .owl-nav button.owl-next span, 
+.products-section .owl-carousel .owl-nav button.owl-prev span {
+line-height: 36px;
+font-size: 40px;
+}
+.productTitle {
+    margin: 0 auto;
+}

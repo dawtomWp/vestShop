@@ -1,0 +1,14 @@
+$baseColor: #ee9b01;
+
+@mixin baseColor {
+background-color: #ffdd00;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 94%);
+}
+@mixin white {
+    background-color:#ebebeb;
+    background-image: none;
+}
+// @mixin baseColor {
+//     background-color: #ffdd00;
+//     background-image: linear-gradient(315deg, #fbb034 0%, #e2c505 74%);
+//     }

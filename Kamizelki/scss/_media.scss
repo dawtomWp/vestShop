@@ -1,0 +1,66 @@
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 992px) {
+    .header {
+        padding: 5px 0;
+    }
+    .header .navbar #collapsibleNavbar .nav-item .nav-link {
+        padding: 10px 15px 10px;
+    }
+    .header .navbar-light .navbar-toggler {
+        padding:0;
+    }
+    .header .navbar-light .navbar-toggler-icon {
+        background-image: none;
+        background-color: rgb(252, 252, 252);
+        height:2px;
+        width:24px;
+        position: relative;
+    }
+    .header .navbar-light .navbar-toggler-icon::before {
+      content: '';
+      position: absolute;
+      background-color: rgb(252, 252, 252);
+      height: 2px;
+      width:100%;
+      left:0;
+      top:-6px;
+    }
+    .header .navbar-light .navbar-toggler-icon::after {
+        content: '';
+        position: absolute;
+        background-color: rgb(252, 252, 252);
+        height: 2px;
+        width:100%;
+        left:0;
+        top:6px;
+      }
+}
+@media(max-width: 768px) {
+    .newsletter-form .btn span {
+        display: none;
+    }
+}
+@media(max-width: 576px) {
+    .about-section {
+        margin-top:30px;
+        padding: 10px 0 10px;
+    }
+    .home-section .home-content h1 {
+        font-size: 30px;
+    }
+    .contact-section {
+        padding: 20px 0 10px;
+    }
+    .faq-section {
+        padding: 20px 0 10px;
+    }
+    .products-section {
+        padding: 20px 0 10px;
+    }
+    .features-section {
+        padding: 20px 0 10px;
+    }
+}

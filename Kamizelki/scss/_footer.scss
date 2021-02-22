@@ -1,0 +1,37 @@
+.footer-section {
+    @include baseColor;
+    padding: 80px 0 80px;
+    text-align: center;
+    color:white;
+    & a {
+        margin-bottom: 20px;
+        color:white;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+}
+
+.footer-section .footer-icons span {
+    height:45px;
+    width:45px;
+    border-radius: 50%;
+    margin-left:15px;
+    line-height: 25px;
+    border: 2px solid #ffffff;
+    background:transparent;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.footer-section .footer-icons span:hover {
+    color: $baseColor;
+    background: #ffffff;
+}
+.footer-author {
+   @include baseColor;
+   margin:0;
+   text-align: center;
+   color:#ffffff;
+}

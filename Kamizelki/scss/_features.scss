@@ -1,0 +1,61 @@
+.features-section {
+   background-color: rgb(238, 238, 238);
+   position: relative;
+   padding: 80px 0 80px;
+   overflow-x: hidden;
+}
+.features-section .features-item {
+box-shadow: 0 0 1-px #636363;
+padding: 30px 40px;
+margin-bottom: 30px;
+background-color: #ffffff;
+border-radius: 5px;
+text-align: center;
+transition: all .5s;
+cursor: pointer;
+
+}
+.features-section .features-item .icon i  {
+    margin-bottom:25px;
+    color: $baseColor;
+    font-size: 40px;
+    transition: .5s;
+}
+.features-section .features-item .icon h3  {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+    margin:0 0 15px;
+    line-height: 30px;
+}
+.features-section .features-item .icon p  {
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    margin:0;
+    font-weight: 400;
+}
+.features-section .features-item:hover {
+  @include baseColor;
+  margin-top:-10px;
+  color: white;
+  .icon i{
+      color:white;
+  }
+}
+.features-shapes div:nth-child(1),
+.features-shapes div:nth-child(2) {
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    top:40%;
+    left:-10%;
+    border-radius: 50%;
+    background-color: rgba(226, 226, 226, 0.644);
+    animation: shapeOne 5s linear infinite;
+    animation: none;
+}
+.features-shapes div:nth-child(2) {
+    top:1%;
+    left:90%;
+}
