@@ -26,6 +26,10 @@ li {
   list-style: none;
 }
 
+.faqSpan {
+  color: #ee9b01;
+}
+
 .mybtn1,
 .mybtn2 {
   background-color: white;
@@ -73,7 +77,12 @@ li {
 }
 
 .mybtn1:hover {
+  outline: none;
   color: #ee9b01;
+}
+
+.mybtn2:hover {
+  outline: none;
 }
 
 .mybtn1:hover::before,
@@ -118,6 +127,15 @@ li {
   color: #222222;
   font-weight: 700;
   margin: 0;
+}
+
+select {
+  background-image: linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.63) 60%), linear-gradient(135deg, rgba(0, 0, 0, 0.63) 40%, transparent 50%) !important;
+  background-position: calc(100% - 15px) 14px, calc(100% - 10px) 14px, 100% 0;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 @-webkit-keyframes shapeOne {
@@ -655,6 +673,21 @@ li {
   margin: 0 auto;
 }
 
+.search-item .form-control {
+  color: #555555;
+  border: none;
+  border-top: 2px solid #d4d4d4;
+  height: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.search-item .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-top: 2px solid #ee9b01;
+}
+
 .testimonial-section {
   padding: 80px 0 80px;
   text-align: center;
@@ -1058,5 +1091,11 @@ li {
   }
   .features-section {
     padding: 20px 0 10px;
+  }
+  .search-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

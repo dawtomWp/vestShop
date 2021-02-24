@@ -69,3 +69,37 @@ $(document).ready(function(){
         }
     })
 });
+
+
+
+
+function filterAction() {
+    const types = document.querySelectorAll('.form-control');
+    const storeProducts = document.querySelectorAll('.shopItem');
+    const appliedFilters = {}; //obiekt do zapisywania  wyborów filtrów
+    types.forEach((type) => {
+      type.addEventListener('change', function() {
+        appliedFilters[this.id] = this.value;     
+        console.log(appliedFilters);
+        storeProducts.forEach(function(product) {
+          let canShow = true;    //flaga czy można wyświetlać
+          Object.keys(appliedFilters).forEach(function(key) { //iteracja po wszystkich i szukanie ktore mozna wyswietlić
+           
+            if (appliedFilters[key].toLowerCase() !== 'wszystkie' && product.getAttribute('data-' + key).toLowerCase() !== appliedFilters[key].toLowerCase()) {
+              canShow = false;
+            }
+          })
+          if (canShow) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        })
+      })
+    })
+  }
+  filterAction();
+
+
+
+

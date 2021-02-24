@@ -6,7 +6,9 @@
 .products-section .products-item {
     box-shadow: 0 0 10px #dddde3;
     margin: 15px 0;
+   
 }
+
 .products-section .products-item .product-img {
   position: relative;
     border-bottom: 1px solid #eeeeee;
@@ -99,4 +101,16 @@ font-size: 40px;
 }
 .productTitle {
     margin: 0 auto;
+}
+
+.search-item .form-control {
+    color: #555555;
+    border:none;
+    border-top: 2px solid rgb(212, 212, 212);
+    height: 50px;
+    transition: .5s;
+}
+.search-item .form-control:focus {
+    box-shadow: none;
+    border-top: 2px solid $baseColor;
 }
