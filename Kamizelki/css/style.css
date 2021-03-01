@@ -186,6 +186,28 @@ select {
   }
 }
 
+@-webkit-keyframes productAnim {
+  0%, 100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes productAnim {
+  0%, 100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
 .header {
   background-color: #ffdd00;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 94%);
@@ -250,7 +272,6 @@ select {
 
 .home-section {
   overflow-x: hidden;
-  background-image: url("vest1.jpg");
   position: relative;
 }
 
@@ -268,7 +289,7 @@ select {
   height: 100%;
   position: absolute;
   width: 100%;
-  opacity: .8;
+  opacity: 1;
 }
 
 .lowerBgc {
@@ -389,6 +410,16 @@ select {
   border: 5px solid white;
   -webkit-animation: none;
           animation: none;
+}
+
+.home-section .home-img img {
+  max-width: 450px;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  lefT: 100px;
+  -webkit-animation: productAnim 7s linear infinite;
+          animation: productAnim 7s linear infinite;
 }
 
 .about-section {
@@ -1063,6 +1094,14 @@ select {
     width: 100%;
     left: 0;
     top: 6px;
+  }
+  .home-section .home-img {
+    text-align: center;
+  }
+  .home-section .home-img img {
+    position: relative;
+    left: auto;
+    top: 80px;
   }
 }
 

@@ -1,4 +1,5 @@
 @media(max-width: 1200px) {
+ 
 
 }
 
@@ -37,6 +38,14 @@
         left:0;
         top:6px;
       }
+      .home-section .home-img {
+        text-align: center;
+    }
+    .home-section .home-img img {
+        position: relative;
+        left:auto;
+        top:80px;
+    }
 }
 @media(max-width: 768px) {
     .newsletter-form .btn span {

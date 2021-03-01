@@ -147,3 +147,11 @@ select { // ZMIENIONY WYGLĄD STRZAŁEK PRZY ROZWIJANYCH INPUTACH
         transform: translateY(350px);
     }
 }
+@keyframes productAnim {
+    0%,100% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
